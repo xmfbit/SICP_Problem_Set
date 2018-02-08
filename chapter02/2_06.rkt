@@ -7,7 +7,7 @@
 (define (add-1 n)
   (lambda (f) (lambda (x) (f ((n f) x)))))
 
-;;; Waht is (add-1 zero) ? Using substitetion model:
+;;; What is (add-1 zero) ? Using substitetion model:
 ;;; (add-1 zero) -->
 ;;; (lambda (f) (lambda (x) (f ((zero f) x)))) -->
 ;;; (lambda (f) (lambda (x) (f (identity-transform x)))) , zero is `identity transform` -->
